@@ -1,10 +1,10 @@
 //Replace the following items in the code:
-//1. Replace the Access Point Name "internet" 
-//and the DNS server name "10.6.6.6" in the AT+CGDCONT and AT+CSTT
+//1. Optus APN is  "internet" 
+//Optus DNS server name is "202.139.83.3" in the AT+CGDCONT and AT+CSTT
 //commands with those of your own service provider.
 //
 //2. Replace the Pachube API Key with your personal ones assigned
-//to your account at pachube.com
+//to your account at pachube.com - Done
 //
 //3. You may choose a different name for the the data stream.
 //I have choosen "WaterLevel". If you use a different name, you will have
