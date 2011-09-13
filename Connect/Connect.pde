@@ -2,7 +2,7 @@
 //1. Optus APN is  "internet" 
 //Optus DNS server name is "202.139.83.3" in the AT+CGDCONT and AT+CSTT
 //commands with those of your own service provider.
-//
+// FOR 3 DNS: 202.124.68.130, . APN: /service. 
 //2. Replace the Pachube API Key with your personal ones assigned
 //to your account at pachube.com - Done
 //
