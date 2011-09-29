@@ -251,7 +251,7 @@ void upload_data()
   Serial.println("PUT /v2/feeds/36575.csv HTTP/1.1\r\n");
   delay(300);
  
-  Serial.println("Host:api.pachube.com\r\n");
+  Serial.println("Host: api.pachube.com\r\n");
   delay(300);
  
   Serial.println("X-PachubeApiKey: _0mW-sxmvv-Cl67tzfpJuHProFX7HNdgAJd3foGuj-0\r\n"); //REPLACE THIS KEY WITH YOUR OWN PACHUBE API KEY
@@ -259,17 +259,19 @@ void upload_data()
   
   Serial.print("Content-Length: 12\r\n");
   delay(300);
-  Serial.print("Connection: Close\r\n");
+  Serial.print("Connection: close\r\n\r\n");
   delay(300);
 
   Serial.print("distance: "); 
   delay(300);
   Serial.print(get_data());
   delay(300);
-  Serial.print("\r\n");
+  GPRS_Serial.print("\r\n"); 
+  delay(300);
+  GPRS_Serial.print("\r\n"); 
   delay(300);
   Serial.print(0x1A,BYTE);
-  //delay(300); //Send End Of Line Character to send all the data and close connection
+  delay(300); //Send End Of Line Character to send all the data and close connection
   connection_check(20,255);
   
 }  
