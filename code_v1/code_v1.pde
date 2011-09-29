@@ -266,9 +266,9 @@ void upload_data()
   delay(300);
   Serial.print(get_data());
   delay(300);
-  GPRS_Serial.print("\r\n"); 
+  Serial.print("\r\n"); 
   delay(300);
-  GPRS_Serial.print("\r\n"); 
+  Serial.print("\r\n"); 
   delay(300);
   Serial.print(0x1A,BYTE);
   delay(300); //Send End Of Line Character to send all the data and close connection
