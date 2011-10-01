@@ -84,7 +84,7 @@ void loop()
   Serial.print(get_data());
   Serial.print("\n");
   
-  Serial.println("AT+CIPSTART=\"TCP\",\"api.pachube.com\",\"80\""); //Open a connection to Pachube.com  
+  Serial.println("AT+CIPSTART=\"TCP\",\"173.203.98.29\",\"80\""); //Open a connection to Pachube.com  
   connection_check(12,255); //was 255
   
   Serial.flush();
@@ -251,7 +251,7 @@ void upload_data()
   Serial.println("PUT /v2/feeds/36575.csv HTTP/1.1\r\n");
   delay(300);
  
-  Serial.println("Host: api.pachube.com\r\n");
+  Serial.println("Host: 173.203.98.29\r\n");
   delay(300);
  
   Serial.println("X-PachubeApiKey: _0mW-sxmvv-Cl67tzfpJuHProFX7HNdgAJd3foGuj-0\r\n"); //REPLACE THIS KEY WITH YOUR OWN PACHUBE API KEY
